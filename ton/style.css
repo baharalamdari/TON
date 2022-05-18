@@ -117,7 +117,8 @@ section .box , .timeline, .timeline-text , .timeline-container{
     border-radius: 55px;
 }
 .future{
-    width:550px;
+    width:550px;  
+    l
 }
 .toncoin-ton{
     width: 55px;
