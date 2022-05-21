@@ -118,7 +118,6 @@ section .box , .timeline, .timeline-text , .timeline-container{
 }
 .future{
     width:550px;  
-    l
 }
 .toncoin-ton{
     width: 55px;
@@ -181,28 +180,24 @@ section .box , .timeline, .timeline-text , .timeline-container{
 }
  .line{
     width: 80%;
-    background:  #00a1f1;
-    height: 1px;
+    background: #caefd9;
+    height: 2px;
     position: absolute;
 } 
 
 .late-yaer{
     font-weight: bold;
     font-size: 1.5em;
-    /* width: 27%; */
     margin-top: 25px;
 }
 .timeline-text{
     display: flex;
-    /* justify-content: space-between; */
-    
+    justify-content: space-between;
 }
 
 .late-text{
-    
     color:#728a96 ;
     font-size: 1.3em;
-    
 }
 
     
