@@ -44,17 +44,115 @@ body{
     --hovered_link: #08c;
      margin: 0;
     font-family: 'Mulish', sans-serif;
-    height: 3000px;
+    height: 5000px;
 }
 
 .decoration{
     text-decoration: none;   
 }
+.color{
+ color:#f7f9fb;
+}
+.first-part{
+    background:  #232328;
+    height: 750px; 
+}
+.first-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#9a6dfb -7.22%,#5dc7fc 109.17%);
+    height: 40px;
+    font-size: 1em;
+}
+.nav-bar{
+    padding-top: 24px;
+}
+.nav-details{
+display:flex;
+justify-content: space-between;
+width:50%;
+font-size: 1.1em;
+font-weight: bold;
+}
+.githob-logo{
+    width: 90px;
+    font-weight: bold;
+    font-size: 1.1em;
+    
+}
+.github-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+}
+.text{
+    width: 70%;
+    padding-right: 50px;
+}
+.diamond-video{
+    width: 30%;
+}
+.diamond{
+    font-size:4em;
+    font-weight: bold;
+}
+.network{
+    color:  #00a1f1;
+}
+.information{
+    font-size: 20px;
+     color: rgba(246,248,251,0.8);
+}    
+
+.join{
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 200px;
+height: 60px;
+background-color: #08c;
+border-radius: 50px ;
+font-weight: bold;
+}
+.github{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 120px;
+height: 60px;
+background-color:hsla(0,0%,100%,0.06);
+border-radius: 50px ;
+font-weight: bold;
+
+}
+.join-github-container{
+    width: 350px;
+    display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.nav-bar , .header , .section{
+    width: 100%;
+    max-width: 1024;
+    margin: auto;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .main-text{
     text-align: center;
     margin-top: 128px;
 }
-.adoption , .future , .timeline{
+.adoption , .future , .timeline , .blockchain ,.participate{
     font-weight: 900;
     font-size: 3.5em;
 }
@@ -65,7 +163,7 @@ body{
     margin-top: 20px;
     line-height: 11px;
 }
-section .box , .timeline, .timeline-text , .timeline-container{
+section .box , .timeline, .timeline-text , .timeline-container , .ton-comunitty , .picture-container , .last-section{
     width: 100%;
     max-width: 1024px;
     margin: auto;
@@ -118,7 +216,6 @@ section .box , .timeline, .timeline-text , .timeline-container{
 }
 .future{
     width:550px;  
-    l
 }
 .toncoin-ton{
     width: 55px;
@@ -130,7 +227,7 @@ section .box , .timeline, .timeline-text , .timeline-container{
     color: #728a96;
     text-align: center;
 }
-.fee {
+.fee , .blockchain-text {
     color: #728a96;
     font-weight: 500;
     font-size: 1.2em;
@@ -181,31 +278,181 @@ section .box , .timeline, .timeline-text , .timeline-container{
 }
  .line{
     width: 80%;
-    background:  #00a1f1;
-    height: 1px;
+    background: #caefd9;
+    height: 2px;
     position: absolute;
 } 
-
+.timeline-text{
+    display: flex;
+    justify-content: space-between;
+}
+.yaer-text{
+    width: 280px;
+}
 .late-yaer{
     font-weight: bold;
     font-size: 1.5em;
-    /* width: 27%; */
     margin-top: 25px;
 }
-.timeline-text{
+.late-text{
+    color:#728a96 ;
+    font-size: 1.2em;
+}
+.blockchain-container {
     display: flex;
-    /* justify-content: space-between; */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900;
+    margin: auto;
+    padding-top: 100px;
     
 }
+.learn-more-button{
+    width: 20%;
+    height: 60px;
+    background-color: #0082c2;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.table-container{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: rgba(236,240,243,0.8) 2px solid;
+    border-radius: 40px;
+}
+.different-height{
+    width: 23%;
+    height: 420px;
+}
+.different-color{
+    width: 23%;
+    height: 600px;
+     background-color: rgba(236,240,243,0.8);
+     border-radius: 25px;
+}
+.table-td{
+    width: 23%;
+    height: 600px;
+}
+.blocktime-text {
+    display: flex;
+    flex-direction: column;
+}
+.first-td{
+    /* height:75px; */
+    font-size: 1.3em;
+    font-weight: 600;
+    padding-left: 30px;
+    /* padding-top: 100px; */
+}
+.ton-time , .ethereum , .solana{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.td-head{
+    font-size: 1.3em;
+    padding-top: 10px;
+}
+ .first-td, .second-td , .third-td , .forth-td{
+    padding-top: 30px;
+    /* height:75px; */
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+.line-design{
+    text-align: center;
+}
 
-.late-text{
-    
+.comunity-container{
+    width: 50%;
+}
+.comunitty-text , .oportunity , .last-image-text{
     color:#728a96 ;
     font-size: 1.3em;
-    
 }
-
-    
-
+.duck-pic{
+    width: 50%;
+}
+.ton-comunitty{
+    display: flex;
+    padding-top: 100px;
+}
+.telegram-button , .twitter-button{
+    display: flex;
+    align-items: center;
+    color:#08c;
+}
+.tel-twit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    font-weight: bold;
+}
+.participate-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.oportunity{
+    width: 100%;
+    max-width: 570px;
+}
+.picture-container{
+display: flex;
+justify-content: space-between;
+padding-top: 40px;
+height: 330px;
+}
+.picture-container-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.last-image{
+    width: 90%;
+    height: 150px;
+    border-radius: 25px;
+}
+.last-image-head{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+}
+.last-image-text{
+    width: 300px;
+}
+.last-image-link{
+    font-weight: bold;
+    color:  #00a1f1;
+    font-size: 1.1em;
+}
+.last-section{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+}
+.last-section a{
+    text-decoration: none; 
+    display: block;
+    padding-top: 10px;
+    color:#728a96 ;
+    font-size: 19px;
+}
+.last-list-head{
+    font-size: 18px;
+    font-weight: bold;
+}
 
 
