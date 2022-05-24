@@ -20,7 +20,7 @@ body{
     --button_dark_primary_hover: #00a1f1;
     --button_dark_primary_pressed: #076c9f;
     --button_dark_secondary: hsla(0,0%,100%,0.06);
-    --button_dark_secondary_hover: hsla(0,0%,100%,0.12);
+    --button_dark_secondary_hover: hsla(0,0%,100%,0.7);
     --button_dark_secondary_pressed: hsla(0,0%,100%,0.03);
     --button_dark_text: #07a0ec;
     --button_dark_secondary_text_hover: #5bc8ff;
@@ -44,25 +44,31 @@ body{
     --hovered_link: #08c;
      margin: 0;
     font-family: 'Mulish', sans-serif;
-    height: 5000px;
 }
-
 .decoration{
     text-decoration: none;   
 }
 .color{
  color:#f7f9fb;
 }
+.same{
+    color: var(--text_light_secondary) ;
+    font-size: 1.2em;
+}
+.same-size{
+    color: var(--text_light_secondary) ;
+    font-size: 1.3em;
+}
 .first-part{
-    background:  #232328;
-    height: 750px; 
+    background: var(--background_dark_main);
+    height: 110%; 
 }
 .first-link{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg,#9a6dfb -7.22%,#5dc7fc 109.17%);
-    height: 40px;
+    background: var(--text_dark_gradient);
+    height: 6%;
     font-size: 1em;
 }
 .nav-bar{
@@ -75,18 +81,16 @@ width:50%;
 font-size: 1.1em;
 font-weight: bold;
 }
-.githob-logo{
-    width: 90px;
-    font-weight: bold;
-    font-size: 1.1em;
-    
-}
 .github-logo-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+.githob-logo{
+    width: 9%;
+    font-weight: bold;
+    font-size: 1.1em;
+}
 .header{
     display: flex;
     align-items: center;
@@ -104,13 +108,12 @@ font-weight: bold;
     font-weight: bold;
 }
 .network{
-    color:  #00a1f1;
+    color: #00a1f1;
 }
 .information{
     font-size: 20px;
-     color: rgba(246,248,251,0.8);
+     color: var(--text_dark_secondary);
 }    
-
 .join{
 display: flex;
 align-items: center;
@@ -130,18 +133,12 @@ height: 60px;
 background-color:hsla(0,0%,100%,0.06);
 border-radius: 50px ;
 font-weight: bold;
-
 }
 .join-github-container{
     width: 350px;
     display: flex;
-align-items: center;
-justify-content: space-between;
-}
-.nav-bar , .header , .section{
-    width: 100%;
-    max-width: 1024;
-    margin: auto;
+    align-items: center;
+    justify-content: space-between;
 }
 .nav-bar{
     display: flex;
@@ -152,18 +149,15 @@ justify-content: space-between;
     text-align: center;
     margin-top: 128px;
 }
-.adoption , .future , .timeline , .blockchain ,.participate{
+.adoption , .future , .timeline , .blockchain ,.participate ,.apps{
     font-weight: 900;
     font-size: 3.5em;
 }
 .blue-text{
-    font-size: 1.3em;
-    font-weight: 100;
-    color:#728a96;
     margin-top: 20px;
     line-height: 11px;
 }
-section .box , .timeline, .timeline-text , .timeline-container , .ton-comunitty , .picture-container , .last-section{
+.auto{
     width: 100%;
     max-width: 1024px;
     margin: auto;
@@ -185,10 +179,6 @@ section .box , .timeline, .timeline-text , .timeline-container , .ton-comunitty 
     border-radius: 24px;
     
 }
-.textbox{
-    font-size: 1.3em;
-    font-weight: 100;
-}
 .numbers{
     padding: 20px 0;
     font-size: 2.4em;
@@ -205,7 +195,7 @@ section .box , .timeline, .timeline-text , .timeline-container , .ton-comunitty 
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 110px; 
+    padding-top: 110px;
 }
 .big-box{
     display: flex;
@@ -227,20 +217,15 @@ section .box , .timeline, .timeline-text , .timeline-container , .ton-comunitty 
     color: #728a96;
     text-align: center;
 }
-.fee , .blockchain-text {
-    color: #728a96;
-    font-weight: 500;
-    font-size: 1.2em;
-}
+
 .toncoin-link{
     font-weight: bold;
     color:  #00a1f1;
     padding-right: 16px;
 }
 .coin{
-    margin-top: 60px;
-    width: 550px;
-    height:350px;  
+    margin-top: 50px;
+    width: 90%;
 }
 .toncoin{
     width: 50%;
@@ -294,10 +279,6 @@ section .box , .timeline, .timeline-text , .timeline-container , .ton-comunitty 
     font-size: 1.5em;
     margin-top: 25px;
 }
-.late-text{
-    color:#728a96 ;
-    font-size: 1.2em;
-}
 .blockchain-container {
     display: flex;
     flex-direction: column;
@@ -320,9 +301,6 @@ section .box , .timeline, .timeline-text , .timeline-container , .ton-comunitty 
     font-weight: bold;
 }
 .table-container{
-    width: 100%;
-    max-width: 1024px;
-    margin: auto;
     height: 650px;
     display: flex;
     justify-content: space-evenly;
@@ -377,10 +355,6 @@ section .box , .timeline, .timeline-text , .timeline-container , .ton-comunitty 
 .comunity-container{
     width: 50%;
 }
-.comunitty-text , .oportunity , .last-image-text{
-    color:#728a96 ;
-    font-size: 1.3em;
-}
 .duck-pic{
     width: 50%;
 }
@@ -404,16 +378,17 @@ section .box , .timeline, .timeline-text , .timeline-container , .ton-comunitty 
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 120px;
 }
 .oportunity{
     width: 100%;
     max-width: 570px;
 }
 .picture-container{
-display: flex;
-justify-content: space-between;
-padding-top: 40px;
-height: 330px;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 40px;
+   height: 330px;
 }
 .picture-container-inner {
     display: flex;
@@ -443,7 +418,7 @@ height: 330px;
     justify-content: space-between;
     padding-top: 130px;
 }
-.last-section a{
+.last-section div a{
     text-decoration: none; 
     display: block;
     padding-top: 10px;
@@ -454,5 +429,175 @@ height: 330px;
     font-size: 18px;
     font-weight: bold;
 }
+/* inja */
+.black-box-continer{
+    background:  #232328;
+    height: 1024px; 
+    margin-top: 200px;
+}
+.blackbox-headtext{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    padding-top: 50px;
+}
+.blockchain-develop{
+    font-size: 3.5em;
+    font-weight: bold;
+}
+.blockchain-link{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
+    margin: auto;
+    padding-top: 50px;
+}
+.doc-logo{
+    width: 180px;
+    height: 60px;
+    background-color: #08c;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+   text-align: center;
+   justify-content: space-evenly;
+   font-weight: bold;
+   font-size: 18px;
+   padding-right: 20px;
+}
+.second-github{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    background-color:hsla(0,0%,100%,0.08);
+    font-weight: bold;
+    font-size: 18px;
+    padding-right: 20px;
+}
+.blackbox{
+    padding-top: 70px;
+}
+.blackbox-headpart{
+height: 60px;
+background-color:hsla(0,0%,100%,0.01);
+border-radius: 30px 30px 0 0;
+}
+.blackbox-bodypart{
+    height: 500px;
+    background-color:hsla(0,0%,100%,0.08);
+    border-radius: 0 0 30px 30px;
+}
+.three-dots{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.left{
+    background-color: #ed6a5e;
+}
+.middle{
+    background-color: #f6be4f;
+}
+.right{
+    background-color: #62c554;
+}
+.blackbox-dots{
+    display: flex;
+justify-content: space-between;
+width: 10%;
+padding-left: 40px;
+padding-top: 25px;
+}
+.second-bigbox{
+    background-color: rgba(236,240,243,0.8);
+    width: 90%;
+    height: 450px;
+    border-radius: 55px;
+    overflow: hidden;
+}
+.apps-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    width: 51%;
+    position: relative;
+    top: 40px;
+}
 
+.apps-link{
+    width: 40%;
+    height: 60px;
+    background-color: #08c;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+}
+.apps-services{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.last-pictures{
+    display: flex;
+    justify-content: space-between;
+}
+.left-pictures img , .right-pictures img{
+    width: 70%;
+    border-radius: 20px;
+}
+.left-pictures{
+    width: 40%;
+    height: 280px;
+    display: flex;
+    margin-bottom: 50px;
+    padding-left: 50px;
+}
+.left-pictures .first ,.second ,.third ,.right-pictures .first ,.second ,.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.left-pictures .first{
+    position: relative;
+    bottom: 40px;
+}
+.left-pictures .second ,.right-pictures .second {
+    position: relative;
+    bottom: 15px;
+}
+.left-pictures .third ,.right-pictures .first ,.third{
+    position: relative;
+    bottom: 20px;
+}
+.right-pictures{
+    width: 40%;
+    height: 280px;
+    display: flex;
+    padding-right: 50px;
+}
+.hover-gray:hover{
+    color: var(--button_dark_secondary_hover);
+}
+.hover-blue:hover{
+    background-color: var(--button_dark_primary_hover);
+}
+.hover-bluetext:hover ,.last-section div a:hover {
+    color: var(--button_dark_secondary_text_hover);
+}
 
