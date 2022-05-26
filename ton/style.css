@@ -73,6 +73,9 @@ body{
 }
 .nav-bar{
     padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav-details{
 display:flex;
@@ -112,38 +115,33 @@ font-weight: bold;
 }
 .information{
     font-size: 20px;
-     color: var(--text_dark_secondary);
+    color: var(--text_dark_secondary);
 }    
 .join{
-display: flex;
-align-items: center;
-justify-content: space-around;
-width: 200px;
-height: 60px;
-background-color: #08c;
-border-radius: 50px ;
-font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 55%;
+    height: 60px;
+    background-color: #08c;
+    border-radius: 50px ;
+    font-weight: bold;
 }
 .github{
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-width: 120px;
-height: 60px;
-background-color:hsla(0,0%,100%,0.06);
-border-radius: 50px ;
-font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 60px;
+    background-color:hsla(0,0%,100%,0.06);
+    border-radius: 50px ;
+    font-weight: bold;
 }
 .join-github-container{
-    width: 350px;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.nav-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .main-text{
     text-align: center;
@@ -167,8 +165,6 @@ font-weight: bold;
     align-items: center;
     justify-content: space-between;
     padding-top: 50px;
-    padding-bottom: 60px;
-    
 }
 .small-box{
     overflow: hidden;
@@ -177,7 +173,6 @@ font-weight: bold;
     width: 30%;
     background-color: #f7f9fb;
     border-radius: 24px;
-    
 }
 .numbers{
     padding: 20px 0;
@@ -208,7 +203,7 @@ font-weight: bold;
     width:550px;  
 }
 .toncoin-ton{
-    width: 55px;
+    width: 12%;
     height: 25px;
     border-radius: 7px;
     border: 1.5px solid #728a96;
@@ -217,7 +212,6 @@ font-weight: bold;
     color: #728a96;
     text-align: center;
 }
-
 .toncoin-link{
     font-weight: bold;
     color:  #00a1f1;
@@ -303,53 +297,43 @@ font-weight: bold;
 .table-container{
     height: 650px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: rgba(236,240,243,0.8) 2px solid;
-    border-radius: 40px;
-}
-.different-height{
-    width: 23%;
-    height: 420px;
-}
-.different-color{
-    width: 23%;
-    height: 600px;
-     background-color: rgba(236,240,243,0.8);
-     border-radius: 25px;
-}
-.table-td{
-    width: 23%;
-    height: 600px;
-}
-.blocktime-text {
-    display: flex;
     flex-direction: column;
+    border: rgba(236,240,243,0.8) 2px solid;
+    border-radius: 40px;  
+}
+.column{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    height: 12%;
+    padding-top: 15px;
+}
+.logo-th{
+     width: 20%;
+     margin: auto;
+     padding-top: 15px;
+}
+.table-logo{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 .first-td{
-    /* height:75px; */
+    width: 30%;
+    padding-top: 100px ;
     font-size: 1.3em;
-    font-weight: 600;
-    padding-left: 30px;
-    /* padding-top: 100px; */
 }
-.ton-time , .ethereum , .solana{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.second-td ,.third-td ,.forth-td{
+    text-align: center;
+    color: var(--text_light_primary);
+    font-size: 1.2em;
+    width: 30%;
+    padding-top: 100px ;
 }
 .td-head{
     font-size: 1.3em;
     padding-top: 10px;
-}
- .first-td, .second-td , .third-td , .forth-td{
-    padding-top: 30px;
-    /* height:75px; */
-    font-size: 1.3em;
-    font-weight: lighter;
-}
-.line-design{
-    text-align: center;
 }
 .under-table-container{
     margin: auto;
@@ -424,6 +408,8 @@ font-weight: bold;
     display: flex;
     justify-content: space-between;
     padding-top: 130px;
+    border-bottom: solid 1px #98b2bf;
+    padding-bottom: 40px;
 }
 .last-section div a{
     text-decoration: none; 
@@ -607,4 +593,22 @@ padding-top: 25px;
 .hover-bluetext:hover ,.last-section div a:hover {
     color: var(--button_dark_secondary_text_hover);
 }
-
+.hover-github:hover{
+    background-color:hsla(0,0%,100%,0.1) ;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.footer-text{
+    font-size: 1em;
+    color: #728a96;
+}
+.footer-logo{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
